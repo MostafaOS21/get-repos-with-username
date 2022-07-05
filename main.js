@@ -39,7 +39,7 @@ function get_repos() {
           let anchor_tag = document.createElement("a");
           let anchor_text = document.createTextNode("Visit");
 
-          anchor_tag.href = `${rep.url}`;
+          anchor_tag.href = `${rep.html_url}`;
           anchor_tag.setAttribute("target", "_blank");
           anchor_tag.appendChild(anchor_text);
           the_box.appendChild(anchor_tag);
